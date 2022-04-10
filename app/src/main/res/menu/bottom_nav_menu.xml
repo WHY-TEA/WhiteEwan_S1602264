@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!--
+/*
+* Ewan White
+* S1602264
+* */
+-->
+
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/navigation_CurrentIncidents"
+        android:icon="@drawable/current_incident"
+        android:title="@string/title_home" />
+
+    <item
+        android:id="@+id/navigation_Roadworks"
+        android:icon="@drawable/roadworks"
+        android:title="@string/title_dashboard" />
+
+    <item
+        android:id="@+id/navigation_PlannedRoadworks"
+        android:icon="@drawable/planned_roadworks"
+        android:title="@string/title_notifications" />
+
+</menu>

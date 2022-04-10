@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!--
+/*
+* Ewan White
+* S1602264
+* */
+-->
+
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.CurrentIncidentsFragment">
+
+    <EditText
+        android:id="@+id/dateSelector"
+        android:layout_width="265dp"
+        android:layout_height="53dp"
+        android:hint="Enter a date"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="1dp"
+        tools:layout_editor_absoluteY="16dp" />
+
+    <Button
+        android:id="@+id/searchButton"
+        android:layout_width="136dp"
+        android:layout_height="54dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginBottom="52dp"
+        android:text="Look Up"
+        app:layout_constraintBottom_toTopOf="@+id/listview"
+        app:layout_constraintStart_toEndOf="@+id/dateSelector"
+        tools:ignore="MissingConstraints" />
+
+    <ListView
+        android:id="@+id/listview"
+        android:layout_width="416dp"
+        android:layout_height="617dp"
+        android:layout_marginTop="44dp"
+        tools:ignore="MissingConstraints"
+        app:layout_constraintTop_toBottomOf="@+id/dateSelector"
+        tools:layout_editor_absoluteX="1dp">
+
+
+    </ListView>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

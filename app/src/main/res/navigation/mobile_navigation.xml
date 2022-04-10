@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!--
+/*
+* Ewan White
+* S1602264
+* */
+-->
+
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@+id/navigation_CurrentIncidents">
+
+    <fragment
+        android:id="@+id/navigation_CurrentIncidents"
+        android:name="com.example.whiteewan_s1602264.ui.CurrentIncidentsFragment"
+        android:label="@string/title_home"
+        tools:layout="@layout/current_incidents_fragment" />
+
+    <fragment
+        android:id="@+id/navigation_Roadworks"
+        android:name="com.example.whiteewan_s1602264.ui.Roadworks"
+        android:label="@string/title_dashboard"
+        tools:layout="@layout/roadworks_fragment" />
+
+    <fragment
+        android:id="@+id/navigation_PlannedRoadworks"
+        android:name="com.example.whiteewan_s1602264.ui.PlannedRoadworksFragment"
+        android:label="@string/title_notifications"
+        tools:layout="@layout/planned_roadworks_fragment" />
+</navigation>

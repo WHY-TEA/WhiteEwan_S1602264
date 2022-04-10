@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!--
+/*
+* Ewan White
+* S1602264
+* */
+-->
+
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.CurrentIncidentsFragment">
+
+    <EditText
+        android:id="@+id/search_bar2"
+        android:layout_width="200dp"
+        android:layout_height="53dp"
+        android:hint="Scottish Motorway Search"
+        android:textSize="12sp"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="217dp"
+        tools:layout_editor_absoluteY="15dp" />
+
+    <Button
+        android:id="@+id/searchButtonMotorway"
+        android:layout_width="136dp"
+        android:layout_height="54dp"
+        android:layout_marginStart="76dp"
+        android:layout_marginBottom="8dp"
+        android:text="Look Up"
+        app:layout_constraintBottom_toTopOf="@+id/searchedListview"
+        app:layout_constraintStart_toEndOf="@+id/search_bar2"
+        tools:ignore="MissingConstraints" />
+
+    <ListView
+        android:id="@+id/searchedListview"
+        android:layout_width="416dp"
+        android:layout_height="617dp"
+        android:layout_marginTop="8dp"
+        app:layout_constraintTop_toBottomOf="@+id/search_bar2"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="206dp">
+
+
+    </ListView>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
